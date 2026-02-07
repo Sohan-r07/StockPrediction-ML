@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+alpaca-py
+matplotlib
+
+#Use the command 'pip intall -r Requirements.txt' to intall all the files from this into your Python Virtual Environment
