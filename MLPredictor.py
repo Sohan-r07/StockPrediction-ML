@@ -79,19 +79,7 @@ model.fit(xtrain,ytrain)
 predictions = model.predict(xtest)
 mae = mean_absolute_error(ytest, predictions)
 rmse = root_mean_squared_error(ytest,predictions)
-#correct=0
-#incorrect = 0
-#print(len(predictions))
-#for i in range(0,248,1):
-#    if((predictions[i]>0).astype(int)==ytest.iloc[i]):
-#        correct+=1
-#    else:
-#        incorrect+=1
 
-
-#print("Correct Predictions: ",correct)
-#print("Incorrect Predictions: ", incorrect)
-#print("Win Percentage: ",((correct/len(ytest))*100.0))
 print(f"Mean Absolute Error: {mae:.2f}")
 print(f"Root Mean Squared Error: {rmse:.2f}")
 
@@ -109,3 +97,19 @@ plt.show()
 #latest_data = x.iloc[-1:].values
 #pred = model.predict(latest_data)[0]
 #print(f"Next day Prediction for NVDA: {pred:.2f}")
+
+#This part of the code is was used to verify if the Model was at the least able to prexict the directional movement of the stock in a day i.e +ve or -ve
+
+#correct=0
+#incorrect = 0
+#print(len(predictions))
+#for i in range(0,248,1):
+#    if((predictions[i]>0).astype(int)==ytest.iloc[i]):
+#        correct+=1
+#    else:
+#        incorrect+=1
+
+
+#print("Correct Predictions: ",correct)
+#print("Incorrect Predictions: ", incorrect)
+#print("Win Percentage: ",((correct/len(ytest))*100.0))
